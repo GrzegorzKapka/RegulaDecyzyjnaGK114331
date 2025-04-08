@@ -5,7 +5,7 @@ from flask import request
 app = Flask(__name__)
 
 @app.route('/api/v1.0/predict', methods=['GET'])
-def get_hello():
+def predict():
     num1 = request.args.get("num1", "0")
     num2 = request.args.get("num2", "0")
 
@@ -22,7 +22,10 @@ def get_hello():
     prediction = int(num1 + num2 > 5.8)
     
     d = {
-        'features': [num1, num2],
+        'features': {
+            'num1': num1, 
+            'num2': num2
+        },
         'prediction': prediction
     }
 
