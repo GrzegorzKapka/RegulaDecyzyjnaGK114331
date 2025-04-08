@@ -4,7 +4,7 @@ Prosty serwis predykcyjny.
 
 ## Endpoint
 
-`GET /api/v1.0/predict?x=3.1&y=4.0`
+`GET /api/v1.0/predict?num1=3.1&num2=4.0`
 
 ### Zwraca:
 
@@ -12,8 +12,7 @@ Prosty serwis predykcyjny.
 {
   "prediction": 1,
   "features": {
-    "x": 3.1,
-    "y": 4.0,
-    "sum": 7.1
+    "num1": 3.1,
+    "num2": 4.0
   }
 }
