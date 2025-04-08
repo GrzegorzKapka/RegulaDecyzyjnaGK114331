@@ -1,7 +1,6 @@
 from flask import Flask
 from flask import request
 
-# utwórz obiekt app 
 app = Flask(__name__)
 
 @app.route('/api/v1.0/predict', methods=['GET'])
