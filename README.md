@@ -10,9 +10,9 @@ Prosty serwis predykcyjny.
 
 ```json
 {
-  "prediction": 1,
   "features": {
     "num1": 3.1,
     "num2": 4.0
-  }
+  },  
+  "prediction": 1
 }
